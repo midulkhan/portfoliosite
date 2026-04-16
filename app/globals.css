@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  font-family: var(--font-poppins);
+}
+
+
+
+.hero{
+  background-image: url('/midul.png');
+  background-size: cover;
+  background-position: top center;
+}
+.aghraham {
+  font-family: var(--font-aghraham);
+}
+.glow{
+  background: linear-gradient(#ff6a00 0%, #ff3b1f 60%);
+}
+.poppins{
+  font-family: var(--font-poppins);
+}
+
+/* skills slider animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+}
