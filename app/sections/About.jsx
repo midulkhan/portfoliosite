@@ -1,4 +1,6 @@
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function About() {
@@ -8,9 +10,12 @@ function About() {
        
 
     <div className="w-1/2 relative ">
-        <Image src="/midul_potrait.png" fill className="rounded-2xl object-contain relative!" alt="Person Image"/>
+        <Image src="/midul_potrait.png" fill sizes="100vw" className="rounded-2xl object-contain relative!" alt="Person Image"/>
     </div>
      <div className="w-1/2 h-full flex flex-col gap-6">
+          <span className="w-fit inline-flex rounded-full border border-[#ff6a00]/20 bg-[#ff6a00]/10 px-4 py-2 text-sm font-medium text-[#ff8b3d]">
+              About me
+            </span>
           <h2 className="poppins text-6xl font-semibold  text-neutral-800 leading-16 ">
             Shaping experience that make life simpler
           </h2>
@@ -25,19 +30,24 @@ function About() {
             and bringing ambitious digital products to life through clean code
             and thoughtful design.
           </p>
+          <div  className="flex gap-4">
+            <Link href="#project" className="py-3 px-4 flex justify-center items-center gap-2 border border-neutral-800 text-neutral-800 rounded-full font-semibold">View Projects <ArrowUpRight /></Link>
+
+            <Link className="py-3 px-4 flex justify-center items-center gap-2 bg-neutral-800 border border-neutral-800 text-white rounded-full font-semibold" href="#cv">Download CV <ArrowUpRight /></Link>
+          </div>
           <div className="flex gap-4 justify-between mt-10">
             <div className="project flex flex-1 flex-col gap-2 justify-center items-center text-neutral-600 border-r border-neutral-300 pr-4">
-                <h2 className="text-4xl font-bold">1700+</h2>
+                <h2 className="text-6xl font-light">1700+</h2>
                 <p className="text-sm">Project completed</p>
             </div>
 
             <div className="project flex flex-1 flex-col gap-2 justify-center items-center text-neutral-600 border-r border-neutral-300 pr-4">
-                <h2 className="text-4xl font-bold">7+</h2>
+                <h2 className="text-6xl font-light">7+</h2>
                 <p className="text-sm">Years Experience</p>
             </div>
 
             <div className="project flex flex-1 flex-col gap-2 justify-center items-center text-neutral-600 ">
-                <h2 className="text-4xl font-bold">400+</h2>
+                <h2 className="text-6xl font-light">400+</h2>
                 <p className="text-sm">Global Clients</p>
             </div>
         </div>

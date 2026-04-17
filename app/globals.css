@@ -35,7 +35,7 @@ body {
   font-family: var(--font-aghraham);
 }
 .glow{
-  background: linear-gradient(#ff6a00 0%, #ff3b1f 60%);
+  background: linear-gradient(#ff6a00, #ff3b1f);
 }
 .poppins{
   font-family: var(--font-poppins);

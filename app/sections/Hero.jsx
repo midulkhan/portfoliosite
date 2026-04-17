@@ -1,4 +1,8 @@
-import { ArrowUpRight } from "lucide-react";
+"use client"
+
+import { ArrowRight} from "lucide-react";
+import { motion } from "motion/react";
+
 
 function Hero() {
   return (
@@ -6,7 +10,13 @@ function Hero() {
       {/* <div className="line absolute bg-mist-400 w-[0.5px] left-16 h-screen"></div>
       <div className="line absolute bg-mist-400 w-[0.5px] right-16 h-screen"></div> */}
 
-      <div className="flex max-w-7xl w-full h-full m-auto px-4">
+      <motion.div
+      initial={{ y: 80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1.3,
+        ease: [0.22, 1, 0.36, 1],
+      }} className="flex max-w-7xl w-full h-full m-auto px-4">
         <div className="right w-1/2 flex flex-col justify-end items-start gap-6 pb-36">
           <p className="text-lg flex gap-2 items-center">
             Hi, I’m Midul
@@ -31,11 +41,11 @@ function Hero() {
               className=" px-6 flex-1 text-neutral-500 focus-visible:outline-none text-lg"
             />
             <button className="glow rounded-full p-3 cursor-pointer">
-              <ArrowUpRight />
+              <ArrowRight />
             </button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
