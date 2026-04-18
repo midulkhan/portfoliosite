@@ -6,6 +6,26 @@ import { ArrowUpRight, Rocket } from "lucide-react";
 import { motion } from "motion/react";
 
 const projects = [
+    {
+    id: 3,
+    badge: "React",
+    title: "Travel & Tourism Platform",
+    description:
+      "Modern travel booking platform with stunning UI and seamless user experience.",
+    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    href: "#",
+    image: "/projects/savannahs.png",
+  },
+  {
+    id: 4,
+    badge: "WordPress",
+    title: "Nonprofit Organization Website",
+    description:
+      "Impact-driven website to raise awareness and collect donations online.",
+    tags: ["WordPress", "Custom Plugin", "Payment Gateway"],
+    href: "#",
+    image: "/projects/crossflowss.png",
+  },
   {
     id: 1,
     badge: "Next.js",
@@ -26,26 +46,7 @@ const projects = [
     href: "#",
     image: "/projects/property-lens.png",
   },
-  {
-    id: 3,
-    badge: "React",
-    title: "Travel & Tourism Platform",
-    description:
-      "Modern travel booking platform with stunning UI and seamless user experience.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    href: "#",
-    image: "/midul.png",
-  },
-  {
-    id: 4,
-    badge: "WordPress",
-    title: "Nonprofit Organization Website",
-    description:
-      "Impact-driven website to raise awareness and collect donations online.",
-    tags: ["WordPress", "Custom Plugin", "Payment Gateway"],
-    href: "#",
-    image: "/midul.png",
-  },
+
 ];
 
 function ProjectCard({
