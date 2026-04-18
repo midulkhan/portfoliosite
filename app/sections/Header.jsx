@@ -28,8 +28,8 @@ function Header() {
                     
                 </ul>
             </div>
-            <div className='button'>
-                <Link className='flex gap-2  text-sm justify-center items-center py-1 pl-4 pr-1 bg-white text-neutral-800 rounded-full' href="www.fiver.com">Freelance profile <ArrowUpRight className='glow rounded-full text-white p-2 ' size={35} /></Link>
+            <div className='button '>
+                <Link className='group flex gap-2  text-sm justify-center items-center py-1 pl-4 pr-1 bg-white text-neutral-800 rounded-full' href="https://www.fiverr.com/mdmidul/" target='_blank'>Freelance profile <ArrowUpRight className='glow rounded-full text-white p-2 transition-transform duration-300 group-hover:rotate-45' size={35} /></Link>
             </div>
         </div>
     </motion.div>

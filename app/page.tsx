@@ -3,6 +3,7 @@ import About from "./sections/About"
 import SkillsSlider from "./sections/SkillsSlider"
 import Project from "./sections/Project"
 import WaterRipple from "./components/WaterRipple"
+import Reviews from "./sections/Reviews"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <SkillsSlider/>
       <About/>
       <Project/>
+      <Reviews/>
     </div>
   );
 }
