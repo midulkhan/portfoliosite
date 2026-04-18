@@ -200,7 +200,7 @@ export default function WaterRipple() {
         ctx.lineTo(p2.x - nx2 * w2, p2.y - ny2 * w2);
         ctx.lineTo(p1.x - nx1 * w1, p1.y - ny1 * w1);
         ctx.closePath();
-        ctx.fillStyle = `rgba(170,255,140,${alpha})`;
+        ctx.fillStyle = `rgba(255,122,36,${alpha})`;
         ctx.fill();
       }
 
@@ -215,9 +215,9 @@ export default function WaterRipple() {
         head.y,
         tipRadius * 4
       );
-      outerGlow.addColorStop(0, `rgba(230,255,220,${0.22 * idleFade})`);
-      outerGlow.addColorStop(0.35, `rgba(170,255,140,${0.12 * idleFade})`);
-      outerGlow.addColorStop(1, "rgba(170,255,140,0)");
+      outerGlow.addColorStop(0, `rgba(255,122,36,${0.22 * idleFade})`);
+outerGlow.addColorStop(0.35, `rgba(255,122,36,${0.12 * idleFade})`);
+outerGlow.addColorStop(1, "rgba(255,122,36,0)");
 
       ctx.beginPath();
       ctx.arc(head.x, head.y, tipRadius * 4, 0, Math.PI * 2);
@@ -232,9 +232,9 @@ export default function WaterRipple() {
         head.y,
         tipRadius * 1.8
       );
-      innerGlow.addColorStop(0, `rgba(255,255,255,${0.95 * idleFade})`);
-      innerGlow.addColorStop(0.45, `rgba(220,255,200,${0.75 * idleFade})`);
-      innerGlow.addColorStop(1, `rgba(170,255,140,0)`);
+      innerGlow.addColorStop(0, `rgba(255,210,170,${0.95 * idleFade})`);
+innerGlow.addColorStop(0.45, `rgba(255,122,36,${0.75 * idleFade})`);
+innerGlow.addColorStop(1, `rgba(255,122,36,0)`);
 
       ctx.beginPath();
       ctx.arc(head.x, head.y, tipRadius * 1.8, 0, Math.PI * 2);
